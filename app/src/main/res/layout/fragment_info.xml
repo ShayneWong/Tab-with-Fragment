@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/fragment_base" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/fragment_info_sidebar_ll"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_version_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_version_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="版本信息"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_online_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_online_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="平台上线参数"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_car_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_car_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="车辆信息"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_module_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_module_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="模块信息"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_storage_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_storage_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="存储设备"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_camera_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_camera_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="摄像头状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_videotape_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_videotape_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="录像状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_ipc_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_ipc_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="IPC状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_ic_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_ic_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="IC卡状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_car_state_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_car_state_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="车辆状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/fragment_info_device_selected_v"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_colors" />
+
+                <TextView
+                    android:id="@+id/fragment_info_device_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/middle_line"
+                    android:gravity="center"
+                    android:text="设备状态"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/middle_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/border"
+                android:background="@color/border" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="match_parent"
+            android:background="@color/main_background" />
+    </LinearLayout>
+</LinearLayout>
